@@ -32,10 +32,6 @@ class App extends React.Component {
       let data = res.data;
       let jobs = [];
 
-      this.setState({
-        lastJobFetchAt: Date.now()
-      });
-
       data.result.forEach(job => {
           if(job.currencyCode === 'USD' && job.nonpublic === false && (this.state.lastJobId === null || job.id > this.state.lastJobId)) {
               jobs.push(job);
@@ -44,6 +40,7 @@ class App extends React.Component {
       });
 
       this.setState({
+        lastJobFetchAt: Date.now(),
         jobs
       });
     }).catch(err => {
