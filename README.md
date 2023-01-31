@@ -1,6 +1,6 @@
 ## Freelance USD Job Filter
 
-Fetches jobs from https://freelancer.com/ and filters them by USD currency -- Useful for filtering out employers that're outside the United States.
+Fetches jobs from https://freelancer.com/ and filters them by USD currency -- Useful for filtering out employers that are outside the United States.
 
 ## How-To
 Clone repository
